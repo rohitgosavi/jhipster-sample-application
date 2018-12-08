@@ -1,0 +1,34 @@
+{
+    "name": "Manager",
+    "fields": [
+        {
+            "fieldName": "managerId",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "managerName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "managerAddress",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipName": "employee",
+            "otherEntityName": "employee",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20181208123030",
+    "entityTableName": "manager",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

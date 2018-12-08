@@ -1,0 +1,30 @@
+{
+    "name": "Employee",
+    "fields": [
+        {
+            "fieldName": "empoloyeeId",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "empoloyeeName",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "managerId",
+            "otherEntityName": "manager",
+            "otherEntityRelationshipName": "employee"
+        }
+    ],
+    "changelogDate": "20181208123029",
+    "entityTableName": "employee",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}
