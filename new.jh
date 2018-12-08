@@ -1,0 +1,16 @@
+
+
+entity Employee {
+	empoloyeeId Integer
+    empoloyeeName String
+}
+
+entity Manager {
+	managerId Integer
+    managerName String
+    managerAddress String  
+}
+
+relationship OneToMany {
+	Employee{managerId} to Manager
+}
